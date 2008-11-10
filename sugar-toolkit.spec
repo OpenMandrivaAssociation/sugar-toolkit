@@ -4,7 +4,7 @@
 Summary: Sugar toolkit
 Name: sugar-toolkit
 Version: 0.82.11
-Release: 1%{?dist}
+Release: %mkrel 1
 #Release: 2.%{alphatag}%{?dist}
 URL: http://wiki.laptop.org/go/Sugar
 # git clone git://dev.laptop.org/sugar
@@ -14,8 +14,8 @@ URL: http://wiki.laptop.org/go/Sugar
 Source0: http://dev.laptop.org/pub/sugar/sources/%{name}/%{name}-%{version}.tar.bz2
 Source1: macros.sugar
 License: LGPLv2
-Group: System Environment/Libraries
-Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Group: System/Libraries
+Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: pkgconfig
 BuildRequires: pygtk2.0-devel
