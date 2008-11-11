@@ -23,7 +23,7 @@ BuildRequires: pygtk2.0-devel
 BuildRequires: gettext
 BuildRequires: gtk2-devel
 BuildRequires: perl-XML-Parser
-BuildRequires: libsm6-devel
+BuildRequires: libsm-devel
 BuildRequires: libalsa1-devel
 
 Requires: gnome-python-desktop
