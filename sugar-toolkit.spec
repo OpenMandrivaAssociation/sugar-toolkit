@@ -17,14 +17,14 @@ License: LGPLv2
 Group: System/Libraries
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires: python-devel
+BuildRequires: libpython-devel
 BuildRequires: pkgconfig
 BuildRequires: pygtk2.0-devel
 BuildRequires: gettext
 BuildRequires: gtk2-devel
 BuildRequires: perl-XML-Parser
 BuildRequires: libsm6-devel
-BuildRequires: libalsa2-devel
+BuildRequires: libalsa1-devel
 
 Requires: gnome-python-desktop
 Requires: python-dbus
