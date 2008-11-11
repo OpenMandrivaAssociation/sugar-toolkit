@@ -17,6 +17,7 @@ License: LGPLv2
 Group: System/Libraries
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires: python-devel
 BuildRequires: pkgconfig
 BuildRequires: pygtk2.0-devel
 BuildRequires: gettext
