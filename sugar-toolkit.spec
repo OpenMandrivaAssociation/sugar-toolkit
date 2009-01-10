@@ -4,8 +4,7 @@
 Summary: Sugar toolkit
 Name: sugar-toolkit
 Version: 0.82.11
-Release: %mkrel 1
-#Release: 2.%{alphatag}%{?dist}
+Release: %mkrel 2
 URL: http://wiki.laptop.org/go/Sugar
 # git clone git://dev.laptop.org/sugar
 # cd sugar
@@ -53,8 +52,8 @@ make
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 %find_lang %name
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/rpm/ 	 
-install -p %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/rpm/macros.sugar
+mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/rpm/macro.d
+install -p %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/rpm/macros.d/sugar.macro
 
 %clean
 rm -rf %{buildroot}
@@ -62,7 +61,5 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc COPYING README
-
 %{python_sitelib}/*
-%{_sysconfdir}/rpm/macros.sugar
-
+%{_sysconfdir}/rpm/macros.d/sugar.macro
