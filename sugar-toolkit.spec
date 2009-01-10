@@ -45,7 +45,7 @@ to interact with system services like presence and the datastore.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 make
 
 %install
