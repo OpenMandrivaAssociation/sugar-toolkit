@@ -52,7 +52,7 @@ make
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 %find_lang %name
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/rpm/macro.d
+mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/rpm/macros.d
 install -p %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/rpm/macros.d/sugar.macro
 
 %clean
