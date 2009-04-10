@@ -27,7 +27,7 @@ Requires: sugar-base >= 0.84.0
 BuildRequires: perl-XML-Parser  
 BuildRequires: libalsa-devel  
 BuildRequires: gettext  
-BuildRequires: libgtk+2-devel  
+BuildRequires: gtk+2-devel  
 BuildRequires: intltool >= 0.33
 BuildRequires: libsm-devel  
 BuildRequires: python-gobject-devel >= 2.14
