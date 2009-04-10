@@ -2,13 +2,17 @@
 
 Name: sugar-toolkit
 Version: 0.84.2
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Sugar toolkit
 License: LGPLv2
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-0.84.2.tar.bz2
+
+Patch: sugar-toolkit-0.84.2-sugar-610.patch
+Patch1: sugar-toolkit-0.84.2-sugar-toolkit-de.patch
+Patch2: sugar-toolkit-0.84.2-sugar-toolkit-es.patch
 
 Requires: sugar-datastore >= 0.84.0
 Requires: python-dbus  
@@ -40,7 +44,9 @@ and the datastore.
 
 %prep
 %setup -q -n sugar-toolkit-0.84.2
-
+%patch -p1
+%patch1 -p1
+%patch2 -p1
 
 # eliminate %%configure's "clever" behaviour
 %define __libtoolize true
