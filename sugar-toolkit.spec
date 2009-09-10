@@ -8,7 +8,7 @@ License: LGPLv2
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-0.85.3.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/%{name}-%{version}.tar.bz2
 
 Requires: sugar-datastore >= 0.85.1
 Requires: python-dbus  
