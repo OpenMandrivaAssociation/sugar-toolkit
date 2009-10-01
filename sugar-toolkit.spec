@@ -2,16 +2,16 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-toolkit
-Version: 0.86.0
+Version: 0.86.1
 Release: %mkrel 1
 Summary: Sugar toolkit
 License: LGPLv2
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-0.86.0.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-0.86.1.tar.bz2
 
-Requires: sugar-datastore >= 0.86.0
+Requires: sugar-datastore >= 0.86.1
 Requires: python-dbus  
 Requires: python-hippo-canvas >= 0.3.0
 Requires: gnome-python-desktop  
@@ -42,7 +42,7 @@ and interfaces to interact with system services like presence
 and the datastore.
 
 %prep
-%setup -q -n sugar-toolkit-0.86.0
+%setup -q -n sugar-toolkit-0.86.1
 
 
 %build
