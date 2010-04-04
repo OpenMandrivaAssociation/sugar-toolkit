@@ -2,26 +2,25 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-toolkit
-Version: 0.86.1
-Release: %mkrel 2
+Version: 0.88.0
+Release: %mkrel 1
 Summary: Sugar toolkit
 License: LGPLv2
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-0.86.1.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-0.88.0.tar.bz2
 
-Patch: sugar-toolkit-0.86.1-sugar-1507.patch
-
-Requires: sugar-datastore >= 0.86.1
+Requires: sugar-datastore >= 0.88.0
 Requires: python-dbus  
 Requires: python-hippo-canvas >= 0.3.0
 Requires: gnome-python-desktop  
-Requires: sugar-presence-service >= 0.86.0
+Requires: sugar-presence-service >= 0.88.0
 Requires: python-gobject >= 2.15
 Requires: python  
 Requires: python-cjson  
-Requires: sugar-base >= 0.86.0
+Requires: python-dateutil  
+Requires: sugar-base >= 0.88.0
 
 BuildRequires: perl-XML-Parser  
 BuildRequires: libalsa-devel  
@@ -32,7 +31,7 @@ BuildRequires: libsm-devel
 BuildRequires: python-gobject-devel >= 2.15
 BuildRequires: pygtk2.0-devel  
 BuildRequires: libpython-devel  
-BuildRequires: sugar-base >= 0.86.0
+BuildRequires: sugar-base >= 0.88.0
 BuildRequires: x11-proto-devel  
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -44,8 +43,8 @@ and interfaces to interact with system services like presence
 and the datastore.
 
 %prep
-%setup -q -n sugar-toolkit-0.86.1
-%patch -p1
+%setup -q -n sugar-toolkit-0.88.0
+
 
 %build
 %define __libtoolize true
