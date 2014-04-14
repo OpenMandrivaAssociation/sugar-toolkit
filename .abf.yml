@@ -1,2 +1,4 @@
+removed_sources:
+  sugar-toolkit-0.88.0.tar.bz2: 3ffe08fc69d87baeff1b1d837f5d7a649e1a20c2
 sources:
-  "sugar-toolkit-0.88.0.tar.bz2": 3ffe08fc69d87baeff1b1d837f5d7a649e1a20c2
+  sugar-toolkit-0.98.1.tar.bz2: 0260102e58881f06299092509244f5d8e46b6c34
