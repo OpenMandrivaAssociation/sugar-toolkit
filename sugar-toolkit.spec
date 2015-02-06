@@ -4,7 +4,7 @@
 
 Name:		sugar-toolkit
 Version:	0.98.1
-Release:	1
+Release:	2
 Summary:	Sugar toolkit
 License:	LGPLv2
 Group:		Graphical desktop/Other
