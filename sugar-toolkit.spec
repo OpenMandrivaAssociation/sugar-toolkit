@@ -4,7 +4,7 @@
 
 Name:		sugar-toolkit
 Version:	0.98.1
-Release:	2
+Release:	3
 Summary:	Sugar toolkit
 License:	LGPLv2
 Group:		Graphical desktop/Other
@@ -18,7 +18,6 @@ Requires:	python2-hippo-canvas >= 0.3.0
 Requires:	sugar-presence-service >= 0.90.2
 Requires:	python2-gobject >= 2.15
 Requires:	python2  
-Requires:	python2-cjson  
 Requires:	python2-dateutil  
 Requires:	sugar-base >= 0.98.0
 
@@ -32,8 +31,6 @@ BuildRequires:	python2-gobject-devel >= 2.15
 BuildRequires:	pygtk2.0-devel  
 BuildRequires:	python2-devel  
 BuildRequires:	x11-proto-devel  
-
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 
 %description
