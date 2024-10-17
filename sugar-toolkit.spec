@@ -8,7 +8,7 @@ Release:	3
 Summary:	Sugar toolkit
 License:	LGPLv2
 Group:		Graphical desktop/Other
-Url:		http://sugarlabs.org/
+Url:		https://sugarlabs.org/
 
 Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-toolkit/sugar-toolkit-%{version}.tar.bz2
 
